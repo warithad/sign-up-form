@@ -1,0 +1,120 @@
+body{
+    margin: 0px;
+    --default-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'sans-serif';
+    
+}
+
+.container{
+    display: flex;
+    height: clamp(100vh, 100%);
+}
+
+img{
+    width: 40%;
+}
+
+/*left contents*/
+#left-contents{
+    background-color:#F5F5F5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: var(--padding-space);
+    padding-bottom: var(--padding-space);
+    
+    
+    --padding-space: 100px;
+    --margin-space: 50px; 
+}
+#text{
+    margin-left: var(--margin-space);
+    font-weight: bolder;
+    padding-right: 150px;
+    font-family: var(--default-font-family);
+    margin-bottom: 70px;
+}
+
+form{
+    margin-bottom: 25px;
+}
+/*form*/
+#white-part{
+    gap:10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 4px 4px 4px #BEBEBE;
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--margin-space);
+    gap: 20px;
+}
+
+
+legend {
+    font-family: var(--default-font-family);
+    font-weight: bolder;
+}
+
+.sides{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right{
+    flex-wrap: wrap;
+}
+
+.sides>div>div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: var(--default-font-family);
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 0.3em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E5E7EB;
+}
+
+button {
+    margin-left: var(--margin-space);
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    border-width: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #596D48;
+    color:white;
+}
+
+/*Login text */
+
+#left-contents>p {
+    font-family: var(--default-font-family);
+    margin-left: var(--margin-space);
+    font-size: 15px;
+}
+
+a {
+    color: #596D48;
+}
