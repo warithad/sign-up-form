@@ -61,7 +61,7 @@ legend {
     display: flex;
     flex-direction: row;
     gap: 100px;
-
+    flex-flow: wrap;
 }
 
 .left, .right{
