@@ -1,22 +1,52 @@
+/* *, *:before, *:after {
+    border: 1px solid red !important;
+    } */
+
 body{
     margin: 0px;
     --default-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'sans-serif';
-    
 }
 
 .container{
     display: flex;
     height: clamp(100vh, 100%);
+    width: 100vw;
 }
 
-img{
+#left-contents {
     width: 40%;
+    height: 100%;
+
+    position: relative;
+}
+
+#transparent {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#odin-text {
+    font-size: 100px;
+    font-family: 'Norse-Bold';
+    color: white;
+    margin: 0%;
+}
+
+#background {
+    width: 100%;
 }
 
 /*left contents*/
-#left-contents{
+#right-contents{
     background-color:#F5F5F5;
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,12 +65,13 @@ img{
     margin-bottom: 70px;
 }
 
+
+/*form*/
 form{
     margin-bottom: 25px;
 }
-/*form*/
+
 #white-part{
-    gap:10px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: white;
@@ -89,8 +120,7 @@ label{
 
 input{
     border-radius: 0.3em;
-    border-width: 1px;
-    border-style: solid;
+    border: thin solid;
     border-color: #E5E7EB;
 }
 
@@ -109,7 +139,7 @@ button {
 
 /*Login text */
 
-#left-contents>p {
+#right-contents>p {
     font-family: var(--default-font-family);
     margin-left: var(--margin-space);
     font-size: 15px;
@@ -118,3 +148,19 @@ button {
 a {
     color: #596D48;
 }
+
+
+/*active declarations*/
+
+.names:focus {
+    border-style: solid;
+    border-color: brown;
+    border-width: 1px;
+}
+
+/*custom font declaration*/
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("Norse-Bold.otf");
+}
+
