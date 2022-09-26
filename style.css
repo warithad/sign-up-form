@@ -153,11 +153,11 @@ a {
 
 /*active declarations*/
 
-.names:focus {
+/* .names:focus {
     border-style: solid;
     border-color: brown;
     border-width: 1px;
-}
+} */
 
 /*custom font declaration*/
 @font-face {
