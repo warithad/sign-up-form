@@ -120,9 +120,9 @@ label{
 }
 
 input{
-    border-radius: 0.3em;
-    border: thin solid;
-    border-color: #E5E7EB;
+    outline: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
 }
 
 button {
@@ -151,13 +151,17 @@ a {
 }
 
 
-/*active declarations*/
+/*pseudo classes*/
 
-/* .names:focus {
-    border-style: solid;
-    border-color: brown;
-    border-width: 1px;
-} */
+input:focus {
+    border: 1px solid blue; 
+    box-shadow: 2px 2px 2px #BEBEBE;
+ }
+
+.pass:invalid {
+   border: 1px solid red; 
+}
+
 
 /*custom font declaration*/
 @font-face {
